@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movie Detail View Controller-->
+        <scene sceneID="YKq-1h-34m">
+            <objects>
+                <viewController storyboardIdentifier="MovieDetailViewController" id="Qft-V1-Ifu" customClass="MovieDetailViewController" customModule="MVPMatchChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1FT-w7-QmB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CZt-Vc-YSE">
+                                <rect key="frame" x="0.0" y="44" width="414" height="517.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CZt-Vc-YSE" secondAttribute="height" multiplier="4:5" id="Nmh-GE-rWm"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="vwn-B6-bwc">
+                                <rect key="frame" x="16" y="577.5" width="382" height="230"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="iah-sO-2p0">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="80.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDE-ew-xbB">
+                                                <rect key="frame" x="141.5" y="0.0" width="99" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" red="0.84458280460000001" green="0.84458280460000001" blue="0.84458280460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gys-HT-2vJ">
+                                                <rect key="frame" x="151.5" y="25.5" width="79.5" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.84458280460000001" green="0.84458280460000001" blue="0.84458280460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqj-d3-qpB">
+                                                <rect key="frame" x="169" y="45.5" width="44" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.84458280460000001" green="0.84458280460000001" blue="0.84458280460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WRR-TG-3wu">
+                                                <rect key="frame" x="170" y="65.5" width="42.5" height="15"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starActive.png" translatesAutoresizingMaskIntoConstraints="NO" id="c7e-8u-74e">
+                                                        <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="15" id="iTp-v7-v3Q"/>
+                                                            <constraint firstAttribute="width" secondItem="c7e-8u-74e" secondAttribute="height" id="xey-Dv-Zb7"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYE-cn-9yG">
+                                                        <rect key="frame" x="23" y="0.0" width="19.5" height="15"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" red="0.84458280460000001" green="0.84458280460000001" blue="0.84458280460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S0C-Or-z2j">
+                                        <rect key="frame" x="0.0" y="92.5" width="382" height="1"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.28215779050000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="VeN-X5-cB0"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efo-EF-lSh">
+                                        <rect key="frame" x="0.0" y="105.5" width="382" height="124.5"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.84458280460000001" green="0.84458280460000001" blue="0.84458280460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0IG-z6-MlX"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CZt-Vc-YSE" firstAttribute="trailing" secondItem="0IG-z6-MlX" secondAttribute="trailing" id="12z-z7-ul4"/>
+                            <constraint firstItem="vwn-B6-bwc" firstAttribute="leading" secondItem="0IG-z6-MlX" secondAttribute="leading" constant="16" id="UZI-zt-UFW"/>
+                            <constraint firstItem="CZt-Vc-YSE" firstAttribute="top" secondItem="0IG-z6-MlX" secondAttribute="top" id="anH-8r-7KC"/>
+                            <constraint firstItem="CZt-Vc-YSE" firstAttribute="leading" secondItem="0IG-z6-MlX" secondAttribute="leading" id="gUG-KT-FB6"/>
+                            <constraint firstItem="0IG-z6-MlX" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vwn-B6-bwc" secondAttribute="bottom" id="sM1-kV-hNa"/>
+                            <constraint firstItem="vwn-B6-bwc" firstAttribute="top" secondItem="CZt-Vc-YSE" secondAttribute="bottom" constant="16" id="wj6-Yi-u4f"/>
+                            <constraint firstItem="0IG-z6-MlX" firstAttribute="trailing" secondItem="vwn-B6-bwc" secondAttribute="trailing" constant="16" id="ymP-M5-wrU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="movieBannerImageView" destination="CZt-Vc-YSE" id="erk-hQ-eZA"/>
+                        <outlet property="movieDescription" destination="Efo-EF-lSh" id="h88-LP-XLK"/>
+                        <outlet property="movieLanguage" destination="Cqj-d3-qpB" id="6nq-lg-GmV"/>
+                        <outlet property="movieRating" destination="SYE-cn-9yG" id="tZz-1F-cE4"/>
+                        <outlet property="movieReleaseDate" destination="gys-HT-2vJ" id="uhY-fX-gYE"/>
+                        <outlet property="movieTitle" destination="YDE-ew-xbB" id="Psv-7y-70r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rB6-Ue-N67" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2190" y="78"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="starActive.png" width="16" height="16"/>
+    </resources>
+</document>
