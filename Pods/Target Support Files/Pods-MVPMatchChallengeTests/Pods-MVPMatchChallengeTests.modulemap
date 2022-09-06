@@ -1,0 +1,6 @@
+framework module Pods_MVPMatchChallengeTests {
+  umbrella header "Pods-MVPMatchChallengeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
